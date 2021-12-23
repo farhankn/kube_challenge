@@ -1,0 +1,11 @@
+expose:
+  type: ingress
+  tls:
+    enabled: false
+  ingress:
+    hosts:
+      core: harbor.yourdomain.com
+      notary: harbor.yourdomain.com
+externalURL: harbor.yourdomain.com
+harborAdminPassword: "Harbor12345"
+secretKey: "yoursecret"
