@@ -8,14 +8,24 @@ This challenge includes Deploying an internal container registry using Digitaloc
 
 [Kubernetes Tutorial](https://kubernetes.io/docs/tutorials/
 )
+
+
 [Kubernetes on Digitalocean](https://www.digitalocean.com/community/tech_talks/getting-started-with-kubernetes-on-digitalocean
 )
+
+
 [Deploy your app on Digitalocean](https://www.digitalocean.com/community/tech_talks/how-to-deploy-your-application-or-microservice-as-a-kubernetes-deployment
 )
+
+
 [Deploying Microservices on Kubernetes](https://www.digitalocean.com/community/tech_talks/deploying-microservices-as-kubernetes-daemonsets-and-jobs
 )
+
+
 [How to use Kubernetes to Expose your app](https://www.digitalocean.com/community/tech_talks/how-to-use-kubernetes-services-to-expose-your-app
 )
+
+
 
 ## Creating a Kubernetes Cluster
 
