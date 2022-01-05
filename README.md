@@ -61,11 +61,11 @@ Use this script `wget https://raw.githubusercontent.com/farhankn/kube_challenge/
 ## Install Trefik Ingress
 This allows you to fix the issue were external IP was not getting assigned after we  deploy the Harbor instance using Helm. I spend a considerable amount of time trying to troubleshoot how to fix including changing the expose type from ingress to nodeport and loadbalance.
 
-`helm repo add traefik https://helm.traefik.io/traefik
-
+```
+helm repo add traefik https://helm.traefik.io/traefik
 helm repo update
-
-helm install traefik traefik/traefik`
+helm install traefik traefik/traefik
+```
 
 
 ## Install Harbor using Helm
@@ -73,12 +73,11 @@ helm install traefik traefik/traefik`
 Before we install harbor using helm , we need to define some of the values in a [yaml file](https://github.com/farhankn/kube_challenge/blob/main/harbor.yml) . I’ve mentioned the type as ingress and disabled TLS for simplicity of configuration. We need to specify the url and Credentialsthat will be used to access the application in the file.
 Once the yaml file has been created we can go ahead installing using helm with below commands.
 
-`helm repo add harbor https://helm.goharbor.io
-
+```
+helm repo add harbor https://helm.goharbor.io
 helm repo update
-
 helm install my-release harbor/harbor -f harbor.yaml
-`
+```
 
 Once harbor install is complete , it can be access from URL specified in the harbor.yaml file. The below screenshot shows my deployed instance of harbor
 
